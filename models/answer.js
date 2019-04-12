@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
     accredidation: DataTypes.INTEGER,
     financialAid: DataTypes.INTEGER,
     mentoring: DataTypes.INTEGER,
-    minHours: DataTypes.INTEGER,
+    minHours: DataTypes.INTEGER
   });
   return Answer;
 };

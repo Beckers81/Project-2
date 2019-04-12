@@ -18,8 +18,10 @@ module.exports = function(app) {
 
   // Delete an example by id
   app.delete("/api/bootcamps/:id", function(req, res) {
-    db.School.destroy({ where: { id: req.params.id } }).then(function(dbSchool) {
-      res.json(dbbootCamps);
+    db.School.destroy({ where: { id: req.params.id } }).then(function(
+      dbSchool
+    ) {
+      res.json(dbSchool);
     });
   });
 };
