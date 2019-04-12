@@ -1,9 +1,7 @@
 require("dotenv").config();
 var express = require("express");
-var Sequelize = require('sequelize')
-var mysql = require("mysql");
 
-var bodyParser = require('body-parser');
+var bodyParser = require("body-parser");
 
 var db = require("./models");
 
@@ -11,10 +9,9 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static("public"));
-
 
 // Routes
 require("./routes/apiRoutes")(app);
