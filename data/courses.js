@@ -5,7 +5,7 @@ var courses = [
       "https://png.pngtree.com/element_origin_min_pic/00/00/11/235835882bd7e60.jpg",
     scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1],
     card:
-      "<div class='card-body'><h5 class='card-title'>Flatiron</h5><h6 class='card-subtitle mb-2 text-muted'><img src='./images/FlatIron.png' alt='schoollogo'></h6><p class='card-text'>(888)958-0569</p><a href=' https://flatironschool.com/target='_blank' class='card-link'>Learn More</a></div>"
+      "<div class='card-body'><h2 class='card-title'>Flatiron</h2><h6 class='card-subtitle mb-2 text-muted'><img src='./images/FlatIron.png' alt='schoollogo'></h6><p class='card-text'>(888)958-0569</p><a href=' https://flatironschool.com/target='_blank' class='card-link'>Learn More</a></div>"
   },
   {
     name: "THINKFUL",

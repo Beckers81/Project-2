@@ -10,16 +10,6 @@ module.exports = function(app) {
     // res.sendFile("survey");
   });
   // Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(
-      dbExample
-    ) {
-      res.send("Need to reconfigure this now that handlebars is gone...");
-      // res.render("example", {
-      //   example: dbExample
-      // });
-    });
-  });
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
@@ -27,8 +17,3 @@ module.exports = function(app) {
     res.send("404 Not Found");
   });
 };
-
-// db.Example.findAll({}).then(function(dbExamples) {
-//   res.render("index", {
-//     msg: "Welcome!",
-//     examples: dbExamples

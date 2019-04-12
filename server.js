@@ -4,7 +4,6 @@ var bodyParser = require("body-parser");
 //var exphbs = require("express-handlebars");
 // Survey page
 // var path = require("path");
-var courses = require("./data/courses");
 // Survey page
 var db = require("./models");
 
@@ -18,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Middleware
-app.use(bodyParser.urlencoded({extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static("public"));
 
