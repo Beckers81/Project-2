@@ -1,3 +1,5 @@
+
+
 #home_page{
   background: url("http://www.guilfordparalegalassociation.org/wp-content/uploads/2019/02/clouds-dark-blue-stripes-abstract-wallpapers-hd-desktop-and-petite-wallpaper-genuine-0.jpg");
 }
@@ -5,7 +7,8 @@
   line-height: 2.5;
 }
 .jumbotron {
-  background: url("https://cache.desktopnexus.com/cropped-wallpapers/2088/2088606-1504x1003-[DesktopNexus.com].jpg?st=mwKeka6VdNnGFcw8qavN0Q&e=1554436832");
+  /* background: url("https://cache.desktopnexus.com/cropped-wallpapers/2088/2088606-1504x1003-[DesktopNexus.com].jpg?st=mwKeka6VdNnGFcw8qavN0Q&e=1554436832"); */
+  background-image: url(../images/imageforproject.jpg);
   margin-left: 50px;
   margin-top: 10px;
   margin-right: 50px;
@@ -39,7 +42,8 @@
 }
 #button {
   align-items: center;
-  margin-left: 680px;
+  /* margin-left: 680px; */
+  margin-left: 750px;
 }
 
 #card0 {
@@ -97,7 +101,8 @@
 }
 /* home container */
 .container {
-  margin-right: 250px;
+  /* margin-right: 250px; */
+  margin-right: 310px;
 }
 
 
@@ -179,6 +184,12 @@ text-decoration: none;
 }
 #missingbutton{
   background-color:#3bbdef;
+}
+#missinghead{
+  text-align: center;
+}
+#missingText{
+  text-align: center;
 }
 /* ************* */
 /* MEDIA SCREEN */
@@ -334,8 +345,4 @@ button#submit {
       width: 500px;
     }
 }
-
-
-
-
 

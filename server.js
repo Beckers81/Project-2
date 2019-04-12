@@ -1,12 +1,20 @@
 require("dotenv").config();
 var express = require("express");
-
 var bodyParser = require("body-parser");
-
+//var exphbs = require("express-handlebars");
+// Survey page
+// var path = require("path");
+// Survey page
 var db = require("./models");
 
 var app = express();
 var PORT = process.env.PORT || 3000;
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// parse application/json
+app.use(bodyParser.json());
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
