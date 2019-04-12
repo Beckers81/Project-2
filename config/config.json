@@ -2,11 +2,7 @@
   
   "development": {
     "username": "root",
-<<<<<<< HEAD
     "password": "root",
-=======
-    "password": "",
->>>>>>> master
     "database": "bootcampsDB",
     "host": "localhost",
     "dialect": "mysql"
