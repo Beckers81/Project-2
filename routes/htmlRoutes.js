@@ -5,7 +5,7 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    res.sendFile(process.cwd() + "/public/home.html");
+    res.sendFile(process.cwd() + "/public/index.html");
   });
   app.get("/Survey", function(req, res) {
     console.log(__dirname + "../public/html/survey.html");

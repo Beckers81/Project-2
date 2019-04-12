@@ -12,8 +12,8 @@ module.exports = function(app) {
   // Create a new example
   app.post("/api/bootcamps", function(req, res) {
     console.log(req.body);
-    db.School.create(req.body).then(function(dbSchools) {
-      res.json(dbSchools);
+    db.School.create(req.body).then(function(dbSchool) {
+      res.json(dbSchool);
     });
   });
 
