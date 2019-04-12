@@ -191,6 +191,19 @@ text-decoration: none;
 #missingText{
   text-align: center;
 }
+/* MATCHING RESULT */
+#resulttitle{
+  text-align: center;
+}
+#reulthead{
+  background-image: url(../images/wallpaper-sky-blue-background-13.jpg);
+}
+#resultbody{
+  background-image: url(../images/missing_modalBody.jpg);
+}
+#resultfooter{
+  background-image: url(../images/wallpaper-sky-blue-background-13.jpg);
+}
 /* ************* */
 /* MEDIA SCREEN */
 /* ************* */
