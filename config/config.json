@@ -2,7 +2,7 @@
   
   "development": {
     "username": "root",
-    "password": "Spartan1026!",
+    "password": "root",
     "database": "bootcampsDB",
     "host": "localhost",
     "dialect": "mysql"

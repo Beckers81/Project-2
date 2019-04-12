@@ -1,27 +1,25 @@
 require("dotenv").config();
 var express = require("express");
-var session = require("express-session");
-
-// Requiring Passport
-var passport = require("./config/passport");
-
 var bodyParser = require("body-parser");
-
+//var exphbs = require("express-handlebars");
+// Survey page
+// var path = require("path");
+// Survey page
 var db = require("./models");
 
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// parse application/json
+app.use(bodyParser.json());
+
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static("public"));
-
-// We need to use sessions to keep track of our user's login status
-app.use(
-  session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
-);
-app.use(passport.initialize());
 
 // Routes
 require("./routes/apiRoutes")(app);
