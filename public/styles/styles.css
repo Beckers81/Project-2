@@ -1,3 +1,341 @@
+#home_page{
+  background: url("http://www.guilfordparalegalassociation.org/wp-content/uploads/2019/02/clouds-dark-blue-stripes-abstract-wallpapers-hd-desktop-and-petite-wallpaper-genuine-0.jpg");
+}
 .list-group-item {
   line-height: 2.5;
 }
+.jumbotron {
+  background: url("https://cache.desktopnexus.com/cropped-wallpapers/2088/2088606-1504x1003-[DesktopNexus.com].jpg?st=mwKeka6VdNnGFcw8qavN0Q&e=1554436832");
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-right: 50px;
+  border-style: ridge;
+  border-color: grey;
+}
+#logo1 {
+  color: white;
+  size: 10px;
+}
+#logo2 {
+  color: white;
+}
+#home {
+  margin-left: 1240px;
+}
+
+#title {
+  text-align: center;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: unset;
+}
+#heading {
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  font-style: bold;
+  text-shadow: 2px 2px grey;
+  size: 18px;
+}
+#button {
+  align-items: center;
+  margin-left: 680px;
+}
+
+#card0 {
+  margin-left: -140px;
+  margin-bottom: 10px;
+  border-style: ridge;
+  border-color: grey;
+  border-width: 3px;
+}
+#card1 {
+  margin-left: -40px;
+  border-style: ridge;
+  border-color: grey;
+  border-width: 3px;
+}
+#card2 {
+  border-style: ridge;
+  border-color: grey;
+  border-width: 3px;
+}
+#card3 {
+  height: 150%;
+  border-style: ridge;
+  border-color: grey;
+  border-width: 3px;
+  margin-left: 0px;
+}
+#card4 {
+  margin-left: -155px;
+  border-style: ridge;
+  border-color: grey;
+  border-width: 3px;
+}
+#card5 {
+  margin-left: -20px;
+  border-style: ridge;
+  border-color: grey;
+  border-width: 3px;
+}
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: slategray;
+  color: white;
+  text-align: center;
+}
+#footerText {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+  font-size: 13px;
+  text-align: center;
+}
+/* home container */
+.container {
+  margin-right: 250px;
+}
+
+
+/* ************* */
+/* SURVEY PAGE */
+/* ************* */
+
+.list-group-item {
+  line-height: 2.5;
+}
+
+#survey_page{
+  background-image: url(../images/wallpaper-sky-blue-background-13.jpg);
+}
+
+
+h4.required::after {
+  content: '*';
+  margin-right: 5px;
+  color: red;
+}
+
+/* logo */
+.fas{
+  color: white;
+}
+
+
+#surveyNav{
+
+  background-color: #333
+  
+}
+
+#home1{
+margin-left: 1240px;
+font-size: 1.5rem;
+color: white;
+direction: none;
+margin-right: 10px;
+text-decoration: none;
+}
+#home1{
+  margin-top: -100px;
+}
+
+#survey1{
+  
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+#logoButton{
+  color: white;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+#footerText {
+  margin-bottom: 0;
+}
+/* Modal -Missing Required Information */
+#mishead{
+  background-image: url(../images/wallpaper-sky-blue-background-13.jpg);
+ 
+}
+#missing{
+  background-image: url(../images/missing_modalBody.jpg);
+}
+#surveyImg{
+  margin-left: 200px;
+}
+#misfooter{
+  background-image: url(../images/wallpaper-sky-blue-background-13.jpg);
+ 
+
+}
+#missingbutton{
+  background-color:#3bbdef;
+}
+/* ************* */
+/* MEDIA SCREEN */
+/* ************* */
+@media screen and (max-width: 980px){
+  #logo2{
+    margin-left: -802px;
+  }
+
+   #survey { 
+    margin-left: -90px;
+    margin-bottom: -2px;
+}
+#home {
+  margin-left: -150px;
+  margin-bottom: -40px;
+}     
+
+  #button{
+    margin-left: 300px;
+    align-items: center;
+    
+  }
+  .container {
+  
+    margin-right: -40px;
+}
+#card2{
+  margin-left: -140px;
+  margin-right: 90px;
+}
+#card3{
+  margin-right: 80px;
+}
+#card4{
+  margin-top: 10px;
+}
+#card5{
+  margin-top: 150px;
+  margin-left: 190px;
+}
+/* survey */
+#home1{
+  margin-left: 600px;
+}
+input#name {
+  width: 650px;
+}
+/* input#photo {
+  width: 650px;
+} */
+button#submit {
+  width: 650px;
+}
+}
+
+@media screen and (max-width: 768px){
+  #logo2{
+    margin-left: -610px;
+  }
+  #button{
+    margin-left: 200px;
+    align-items: center;
+  }
+  #card1{
+    margin-right: 65px;
+  }
+  #card3{
+    margin-left: 160px;
+  }
+  #card5 {
+    margin-left: 60px;
+}
+/* survey */
+#logoButton{
+  margin-top: 10px;
+}
+#home1{
+margin-left: 450px;
+margin-top: 20px;
+
+
+}
+input#name {
+  width: 600px;
+}
+/* input#photo {
+  width: 600px;
+} */
+button#submit {
+  width: 600px;
+}
+}
+
+@media screen and (max-width: 640px){
+  #home {
+ 
+    margin-top: 19px;
+  }
+  #survey{
+    margin-bottom: -2px;
+    margin-left: px
+  }
+  #logo2{
+    margin-left: -495px;
+  }
+  #button{
+    margin-left: 140px;
+    align-items: center;
+    
+  }
+  #card0{
+  
+    margin-left: 70px;
+  }
+  #card1{
+    margin-left: 70px;
+  }
+  #card2 {
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+  #card3 {
+   
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+  #card4{
+    
+    margin-left: 55px;
+    margin-top: 130px;
+  }
+  #card5{
+   
+    margin-left: -37px;
+    margin-top: 415px;
+  }
+  /* survey */
+  #home1{
+    margin-top: -30px;
+    margin-left: 350px;
+    }
+    #logoButton{
+      margin-top: 30px;
+    }
+    input#name {
+      width: 500px;
+    }
+    /* input#photo {
+      width: 500px;
+    } */
+    button#submit {
+      width: 500px;
+    }
+}
+
+
+
+
+

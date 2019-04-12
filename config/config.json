@@ -1,14 +1,15 @@
 {
+  
   "development": {
     "username": "root",
-    "password": null,
-    "database": "exampledb",
+    "password": "",
+    "database": "bootcampsDB",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": null,
+    "password": "",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
@@ -18,4 +19,5 @@
     "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
+  
 }
