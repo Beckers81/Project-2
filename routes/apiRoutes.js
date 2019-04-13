@@ -4,7 +4,7 @@ db = require("../models/");
 module.exports = function(app) {
   // Get all examples
   app.get("/api/bootcamps", function(req, res) {
-    db.Bootcamp.findAll({}).then(function(dbSchool) {
+    db.Scgool.findAll({}).then(function(dbSchool) {
       res.json(dbSchool);
     });
   });
