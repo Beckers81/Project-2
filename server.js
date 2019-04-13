@@ -25,6 +25,7 @@ require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 require("./routes/passportRoute")(app);
 require("./routes/bootcampsRoute")(app);
+require("./routes/schoolRoutes")(app);
 
 var syncOptions = { force: true };
 

@@ -82,13 +82,17 @@
             </div>
             <div class="col">
                 <div class="card" id="card3" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title4</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                    </div>
+                    <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Please enter a school name.</label>
+                              <input type="input" class="form-control" id="schoolInput" aria-describedby="input" placeholder="Enter school">
+                              <br>
+                              <button type="submit" class="btn btn-primary" id="submitSchool">Submit</button>
+                              <div class="card-body">
+                                    <p class="card-text" id="schoolList"></p>
+                                  </div>
+                            </div>
+                    </form>       
                 </div>
             </div>
         </div>
@@ -123,5 +127,29 @@
     <div class="footer">
         <p id="footerText">A website designed by the Primary Keys © team. Version 1.0</p>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        var currentURL = window.location.origin;
+        $("#submitSchool").on("click", function (event) {
+            console.log("button clicked");
+            event.preventDefault();
+        
+            var enteredSchool = $("#schoolInput").val();
+            $("#schoolList").text(enteredSchool);
+        
+            var enteredSchool = {
+                schoolName: $("#schoolInput").val()
+            }
+            
+            console.log(enteredSchool);
+            $.post(currentURL + "/api/school", enteredSchool, function (data) {
+           
+            });
+        
+        });
+        
+        // $("#matchName").text(matchedSchool.card);
+        </script>
 </body>
 </html>
