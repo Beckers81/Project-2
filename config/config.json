@@ -1,14 +1,18 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "Giselle0702!",
+=======
+    "password": "root",
+>>>>>>> 8b45deb9ce0ba285fda7d0886b47101d8a2f79da
     "database": "bootcampsDB",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "root!",
+    "password": "root",
     "database": "bootcampsDB",
     "host": "localhost",
     "dialect": "mysql",

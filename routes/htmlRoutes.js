@@ -7,9 +7,15 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     res.sendFile(process.cwd() + "/public/index.html");
   });
+<<<<<<< HEAD
   app.get("/Survey", function(req, res) {
     // console.log(__dirname + "../public/html/survey.html");
     res.sendFile(path.join(__dirname, "/public/html/Survey.html"));
+=======
+  app.get("/survey", function(req, res) {
+    console.log(__dirname + "/public/survey.html");
+    // res.sendFile(path.join(__dirname, "/public/html/Survey.html"));
+>>>>>>> 8b45deb9ce0ba285fda7d0886b47101d8a2f79da
     res.sendFile(process.cwd() + "/public/survey.html");
     // res.sendFile("survey");
   });
