@@ -204,6 +204,16 @@ text-decoration: none;
 #resultfooter{
   background-image: url(../images/wallpaper-sky-blue-background-13.jpg);
 }
+
+/* result - card - new changes */
+.card-body {
+  text-align: center;
+}
+
+.card1-link {
+  margin-left: 20%;
+}
+/* ^ result - card - new changes */
 /* ************* */
 /* MEDIA SCREEN */
 /* ************* */

@@ -7,8 +7,8 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     res.sendFile(process.cwd() + "/public/index.html");
   });
-  app.get("/Survey", function(req, res) {
-    console.log(__dirname + "../public/html/survey.html");
+  app.get("/survey", function(req, res) {
+    console.log(__dirname + "/public/survey.html");
     // res.sendFile(path.join(__dirname, "/public/html/Survey.html"));
     res.sendFile(process.cwd() + "/public/survey.html");
     // res.sendFile("survey");

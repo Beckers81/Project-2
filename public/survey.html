@@ -47,7 +47,7 @@
       </button>
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="/" id="home1">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="/survey" id="survey1">Survey</a>
+        <a class="nav-item nav-link" href="/survey.html" id="survey1">Survey</a>
       </div>
     </nav>
   </div>
@@ -252,8 +252,12 @@
   <!-- <script src="https://code.jquery.com/jquery-2.2.3.min.js"
     integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script> -->
 <!-- uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu -->
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
 
 <!-- uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu -->
   <!-- Latest compiled and minified JavaScript -->
@@ -272,9 +276,9 @@
   <script type="text/javascript">
 
     // For testing, comment out in production build
-    // $(document).ready(() => {
-    //   $('select').val(1);
-    // });
+    $(document).ready(() => {
+      // $('select').val(1);
+   
 
     var currentURL = window.location.origin;
     // Capture the form inputs
@@ -336,7 +340,8 @@
         // });
 // 9999999999999999999999999999999999999999999999
 
-        $.post(currentURL + "/api/courses", userData, function (data) {
+        // $.post(currentURL + "/api/courses", userData, function (data)
+        $.post(currentURL + "/api/courses", userData, function (data)  {
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#matchName").html(data.card);
           // $('#matchImg').attr("src", data.photo);
@@ -364,10 +369,12 @@
       }
 
     });
+  });
 
   </script>
 
 </body>
 
 </html>
+
 
