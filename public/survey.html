@@ -334,14 +334,8 @@
         //   $("#photo").val("");
         // });
 // 9999999999999999999999999999999999999999999999
-<<<<<<< HEAD
         var currentURL = window.location.origin;
         $.post(currentURL + "/api/courses", userData, function (data) {
-=======
-
-        // $.post(currentURL + "/api/courses", userData, function (data)
-        $.post(currentURL + "/api/courses", userData, function (data)  {
->>>>>>> 8b45deb9ce0ba285fda7d0886b47101d8a2f79da
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#matchName").html(data.card);
           // $('#matchImg').attr("src", data.photo);

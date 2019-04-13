@@ -1,7 +1,6 @@
 db = require("../models/");
 // var passport = require("../config/passport");
 
-<<<<<<< HEAD
 // module.exports = function(app) {
 //   // Get all examples
 //   app.get("/api/bootcamps", function(req, res) {
@@ -27,7 +26,7 @@ db = require("../models/");
 //     });
 //   });
 // };
-=======
+
 module.exports = function(app) {
   // Get all examples
   app.get("/api/bootcamps", function(req, res) {
@@ -53,7 +52,6 @@ module.exports = function(app) {
     });
   });
 };
->>>>>>> 8b45deb9ce0ba285fda7d0886b47101d8a2f79da
 
 // SURVEY PAGE
 var courses = require("../data/courses.js");
@@ -119,11 +117,9 @@ module.exports = function(app) {
 
 // module.exports = function(app) {
 //   app.post("/api/login", passport.authenticate("local"), function(req, res) {
-<<<<<<< HEAD
 //     res.json("/members");
-=======
 //     res.json("/activeuser");
->>>>>>> 8b45deb9ce0ba285fda7d0886b47101d8a2f79da
+
 //   });
 //   app.post("/api/signup", function(req, res) {
 //     console.log(req.body);
