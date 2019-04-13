@@ -70,6 +70,7 @@
   border-color: grey;
   border-width: 3px;
   margin-left: 0px;
+  height: 270px;
 }
 #card4 {
   margin-left: -155px;
@@ -133,7 +134,13 @@ h4.required::after {
 
 #surveyNav{
 
-  background-color: #333
+  /* background-color: #333 */
+  /* background-color: #373333; */
+  background-color:#3f3333;
+  
+}
+.surveyNav1{
+  background-color:#55534d;
   
 }
 
@@ -214,6 +221,39 @@ text-decoration: none;
   margin-left: 20%;
 }
 /* ^ result - card - new changes */
+
+
+/* signup_page */
+#signup_page{
+  background-color: #00bcd4;
+}
+#login_page{
+  background-color: #00bcd4;
+}
+
+#login1{
+  margin-left: 1240px;
+  font-size: 1.5rem;
+  color: white;
+  direction: none;
+  margin-right: 10px;
+  text-decoration: none;
+  }
+  #login1{
+  padding: 20px;
+  }
+
+  #signup3{
+    margin-left: 1240px;
+    font-size: 1.5rem;
+    color: white;
+    direction: none;
+    margin-right: 10px;
+    text-decoration: none;
+    }
+    #signup3{
+    padding: 20px;
+    }
 /* ************* */
 /* MEDIA SCREEN */
 /* ************* */
@@ -339,7 +379,9 @@ button#submit {
    
     margin-left: 70px;
     margin-top: 10px;
+   
   }
+  
   #card4{
     
     margin-left: 55px;
