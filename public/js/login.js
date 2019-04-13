@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   // LoginUser does a post to our api/login route and redirects us to the home page
   function loginUser(email, password) {
-    $.post("/api/login", {
+    $.post("./api/login", {
       email: email,
       password: password
     })

@@ -8,8 +8,8 @@ module.exports = function(app) {
     res.sendFile(process.cwd() + "/public/index.html");
   });
   app.get("/Survey", function(req, res) {
-    console.log(__dirname + "../public/html/survey.html");
-    // res.sendFile(path.join(__dirname, "/public/html/Survey.html"));
+    // console.log(__dirname + "../public/html/survey.html");
+    res.sendFile(path.join(__dirname, "/public/html/Survey.html"));
     res.sendFile(process.cwd() + "/public/survey.html");
     // res.sendFile("survey");
   });
@@ -25,20 +25,20 @@ module.exports = function(app) {
 module.exports = function(app) {
   app.get("/", function(req, res) {
     if (req.user) {
-      res.redirect("/activeuser");
+      res.redirect("/members");
     }
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 
   app.get("/login", function(req, res) {
     if (req.user) {
-      res.redirect("/activeuser");
+      res.redirect("/members");
     }
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
   // isAuthenticated middleware to this route
-  app.get("/activeuser", isAuthenticated, function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/activeuser.html"));
+  app.get("/members", isAuthenticated, function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 };

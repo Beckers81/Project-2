@@ -23,6 +23,8 @@ app.use(passport.initialize());
 // Routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+require("./routes/passportRoute")(app);
+require("./routes/bootcampsRoute")(app);
 
 var syncOptions = { force: true };
 
